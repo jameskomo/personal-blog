@@ -1,5 +1,5 @@
 
-export SECRET_KEY='KoMoH'
+export SECRET_KEY=KoMoH
 export MAIL_USERNAME=juniorgichohi
 export MAIL_PASSWORD=shahidi123
 
