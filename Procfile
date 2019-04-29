@@ -1,1 +1,1 @@
-web: gunicorn manage:KoMoH
+web: gunicorn manage:app
