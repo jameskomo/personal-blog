@@ -78,9 +78,9 @@ def new_blog():
         blog = blog_form.blog.data
         # user_id = blog_form.user_id.data
         new_blog = Blog(blog=blog,user_id=current_user.id)
-        # new_blog.save_blogs() 
-        # subscriber=Subscribe.query.all()
-        # for subscribe in subscriber:
+        new_blog.save_blogs() 
+        subscriber=Subscribe.query.all()
+        for subscribe in subscriber:
             mail_message("New Blog Post","email/welcome_user",subscribe.email, new_blog = new_blog )
         return redirect(url_for('main.index'))
 
