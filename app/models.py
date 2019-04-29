@@ -94,10 +94,10 @@ class Blog(db.Model):
 class Comment(db.Model):
     __tablename__ = 'comments'
 
-    id = db.Column(db.Integer,primary_key = True)
-    description= db.Column(db.String(255))
-    blogs_id = db.Column(db.Integer,db.ForeignKey('blogs.id'))
-    user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+    # id = db.Column(db.Integer,primary_key = True)
+    # description= db.Column(db.String(255))
+    # blogs_id = db.Column(db.Integer,db.ForeignKey('blogs.id'))
+    # user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
     
     def save_comments(self):
        db.session.add(self)
