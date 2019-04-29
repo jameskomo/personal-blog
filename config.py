@@ -16,7 +16,7 @@ class Config:
     SENDER_EMAIL = "juniorgichohi@gmail.com"
 
 class ProdConfig(Config):
-    pass
+     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://komo:KoMoH@localhost/personal_blog'
 
 
 class DevConfig(Config):
