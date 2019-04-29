@@ -9,7 +9,8 @@ https://komo-blog.herokuapp.com/
 ## Description
 This is a personal blogging website where you can create and share your opinions and other users can read and comment on them.There is also provision for a subscription service in order to receive updates whenever a new blog is posted.
 
-#User Strories
+## User Strories
+
 As a user you will be able to:
 
 to view the blog posts submitted
