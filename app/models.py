@@ -22,20 +22,20 @@ class Quote:
        Quote.all_quotes.append(self)
 
 
-    @classmethod
-    def clear_quotes(cls):
-       Post.all_quotes.clear()
+    # @classmethod
+    # def clear_quotes(cls):
+    #    Post.all_quotes.clear()
 
-    @classmethod
-    def get_quotes(cls,id):
+    # @classmethod
+    # def get_quotes(cls,id):
 
-        response = []
+    #     response = []
 
-        for Quote in cls.all_quotes:
-            if Quote.user_id == id:
-                response.append(quote)
+    #     for Quote in cls.all_quotes:
+    #         if Quote.user_id == id:
+    #             response.append(quote)
 
-        return response
+    #     return response
 
 class User(UserMixin,db.Model):
     __tablename__ = 'users'
